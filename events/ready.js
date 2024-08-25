@@ -16,7 +16,7 @@ client.on('ready', () => {
 
     // Oynuyor Kısmı
     
-      client.user.setPresence({ activities: [{ name: '31' }] });
+      client.user.setPresence({ activities: [{ name: 'skicibot online!' }] });
       
     
         console.log ('_________________________________________');

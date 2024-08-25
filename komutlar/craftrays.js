@@ -6,19 +6,19 @@ exports.run = async (client, message, args) => {
         return message.reply('Lütfen taratmak istediğiniz ismi girin.');
     }
 
-    const parameter = args.join(' '); // Kullanıcı tarafından girilen tüm argümanları al
+    const parameter = args.join(' '); // Api
     const apiUrl = `https://crp-pink.vercel.app/api/search?keyword=${parameter}`;
 
     try {
-        // API'den ham veri çekme
+        // get raw on api
         const response = await axios.get(apiUrl);
-        const rawData = JSON.stringify(response.data, null, 2); // Ham veriyi JSON formatında stringe çevir
+        const rawData = JSON.stringify(response.data, null, 2); // raw to json
 
-        // Ham veriyi 'user.txt' dosyasına kaydetme
+        // get txt
         const fileName = 'user.txt';
         fs.writeFileSync(fileName, rawData);
 
-        // Dosyayı Discord kanalına gönderme
+        // send txt
         await message.channel.send({
             content: `**${parameter}** kullanıcısına ait bilgiler:`,
             files: [{
