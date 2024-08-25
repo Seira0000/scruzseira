@@ -1,0 +1,15 @@
+{
+  "reg_date": "1605687237000",
+  "country": "Turkey",
+  "password": "4ff3a195eef36301dcbcc8d95e48b205",
+  "validation_email_code": "d91e61aa6c1c00e335d5087bac79bdda",
+  "lastlogin": 1636820862121,
+  "validation_email": true,
+  "validation_email_right": 1,
+  "id": 2623368,
+  "credit": 0,
+  "email": "beysakiz@gmail.com",
+  "show_password": "ih1888",
+  "username": "Furtsy",
+  "HIT_FROM": "SERVER_1"
+}
