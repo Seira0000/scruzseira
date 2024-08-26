@@ -1,3 +1,5 @@
+// do not wokr
+
 const Discord = require('discord.js');
 const mineflayer = require('mineflayer');
 const sqlite3 = require('sqlite3').verbose();
