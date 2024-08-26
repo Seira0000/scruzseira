@@ -25,7 +25,7 @@ client.on('ready', () => {
         console.log (`Kullanıcılar       : ${client.users.cache.size}`);
         console.log (`Prefix             : ${ayarlar.prefix}`);
         console.log (`Toplam Komut       : ${files.length}`);
-        console.log (`Durum              : Bot Çevrimiçi!`);
+        console.log (`Durum              : sekis baslasın!`);
         console.log ('_________________________________________');
     
 client.commands.set(props.help.name, props);

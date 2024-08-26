@@ -7,7 +7,7 @@ exports.run = async (client, message, args) => {
 //GENEL KOMUTU
     if(args[0] === "Genel" || args[0] === "genel" || args[0] === "General" || args[0] === "general") {
               let Genel = new Discord.EmbedBuilder()
-              .setAuthor({ name: 'Genel', iconURL: `${message.author.displayAvatarURL()}`, url: 'https://discord.gg/T2jXbtBjwj' })
+              .setAuthor({ name: 'Genel', iconURL: `${message.author.displayAvatarURL()}`, url: 'https://discord.gg/jjKsMS45' })
               .setColor('#2667FF')
               .setDescription(client.commands.filter(cmd => cmd.conf.kategori === 'Genel').map(cmd => `:white_small_square: - **${prefix}${cmd.help.name}** ${cmd.help.description}`).join("\n "))
              .setFooter({ text: `Bu komutu kullanan kullanıcı ${message.author.tag}` , iconURL: `${message.author.displayAvatarURL()}` });
@@ -19,7 +19,7 @@ exports.run = async (client, message, args) => {
     //SUNUCU KOMUTU
       if(args[0] === "Sunucu" || args[0] === "sunucu") {
               let Sunucu = new Discord.EmbedBuilder()
-              .setAuthor({ name: 'Sunucu', iconURL: `${message.author.displayAvatarURL()}`, url: 'https://discord.gg/T2jXbtBjwj' })
+              .setAuthor({ name: 'Sunucu', iconURL: `${message.author.displayAvatarURL()}`, url: 'https://discord.gg/jjKsMS45' })
               .setColor('#2667FF')
               .setDescription(client.commands.filter(cmd => cmd.conf.kategori === 'Sunucu').map(cmd => `:white_small_square: - **${prefix}${cmd.help.name}** ${cmd.help.description}`).join("\n "))
              .setFooter({ text: `Bu komutu kullanan kullanıcı ${message.author.tag}` , iconURL: `${message.author.displayAvatarURL()}` });
@@ -32,7 +32,7 @@ exports.run = async (client, message, args) => {
 //EĞLENCE KOMUTU
   if(args[0] === "Eğlence" || args[0] === "eğlence" || args[0] === "Fun" || args[0] === "fun") {
    let Eğlence = new Discord.EmbedBuilder()
-   .setAuthor({ name: 'Eğlence', iconURL: `${message.author.displayAvatarURL()}`, url: 'https://discord.gg/T2jXbtBjwj' })
+   .setAuthor({ name: 'Eğlence', iconURL: `${message.author.displayAvatarURL()}`, url: 'https://discord.gg/jjKsMS45' })
    .setColor('#2667FF')
    .setDescription(client.commands.filter(cmd => cmd.conf.kategori === 'Eğlence').map(cmd => `:white_small_square: - **${prefix}${cmd.help.name}** ${cmd.help.description}`).join("\n "))
   .setFooter({ text: `Bu komutu kullanan kullanıcı ${message.author.tag}` , iconURL: `${message.author.displayAvatarURL()}` });
@@ -44,7 +44,7 @@ exports.run = async (client, message, args) => {
   //MODERASYON KOMUTU
   if(args[0] === "Moderasyon" || args[0] === "moderasyon" || args[0] === "moderation" || args[0] === "Moderation") {
    let Moderasyon = new Discord.EmbedBuilder()
-   .setAuthor({ name: 'Moderasyon', iconURL: `${message.author.displayAvatarURL()}`, url: 'https://discord.gg/T2jXbtBjwj' })
+   .setAuthor({ name: 'Moderasyon', iconURL: `${message.author.displayAvatarURL()}`, url: 'https://discord.gg/jjKsMS45' })
    .setColor('#2667FF')
    .setDescription(client.commands.filter(cmd => cmd.conf.kategori === 'Moderasyon').map(cmd => `:white_small_square: - **${prefix}${cmd.help.name}** ${cmd.help.description}`).join("\n "))
   .setFooter({ text: `Bu komutu kullanan kullanıcı ${message.author.tag}` , iconURL: `${message.author.displayAvatarURL()}` });
@@ -56,7 +56,7 @@ exports.run = async (client, message, args) => {
      //SAHİP KOMUTU
   if(args[0] === "Sahip" || args[0] === "sahip" ) {
     let Sahip = new Discord.EmbedBuilder()
-    .setAuthor({ name: 'Sahip', iconURL: `${message.author.displayAvatarURL()}`, url: 'https://discord.gg/T2jXbtBjwj' })
+    .setAuthor({ name: 'Sahip', iconURL: `${message.author.displayAvatarURL()}`, url: 'https://discord.gg/jjKsMS45' })
     .setColor('#2667FF')
     .setDescription(client.commands.filter(cmd => cmd.conf.kategori === 'Sahip').map(cmd => `:white_small_square: - **${prefix}${cmd.help.name}** ${cmd.help.description}`).join("\n "))
    .setFooter({ text: `Bu komutu kullanan kullanıcı ${message.author.tag}` , iconURL: `${message.author.displayAvatarURL()}` });
@@ -70,7 +70,7 @@ exports.run = async (client, message, args) => {
 //YARDIM KOMUTU
   
   let embed = new Discord.EmbedBuilder()
-  .setAuthor({ name: 'Yardım', iconURL: `${message.author.displayAvatarURL()}`, url: 'https://discord.gg/T2jXbtBjwj' })
+  .setAuthor({ name: 'Yardım', iconURL: `${message.author.displayAvatarURL()}`, url: 'https://discord.gg/jjKsMS45' })
   .setColor('#FFFB05')
   .setDescription(`**Örnek Kullanım:** \`${prefix}yardım Kategori\` \n **Örnek:** \`${prefix}yardım Genel\``)
 	.addFields(
