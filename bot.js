@@ -65,16 +65,16 @@ client.on("messageCreate", async (msg) => {
               console.log(`Bot ${bot.username} sunucuya bağlandı!`);
               console.log("Mesaj göndermek için bir şeyler yazın:");
 
-              // Konsoldan girilen mesajları alıp bot aracılığıyla göndermek için
+             
           });
 
           
 
           console.log("Logged in as " + bot.username);
 
-          // Mesajları alıp işlemek için bir fonksiyon
+          
           bot.on("chat", (username, message) => {
-              if (username === bot.username) return; // Botun kendi mesajlarını görmezden gelir
+              if (username === bot.username) return;
               client.channels.cache
                   .get("1275122103326347314")
                   .send(`${username}: ${message}`);
@@ -86,7 +86,7 @@ client.on("messageCreate", async (msg) => {
                   bot.chat(msg.content);
               }
           });
-      } // Burada sunucu takip işlemlerini yapabilirsini
+      }
   }
 });
 
